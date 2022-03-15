@@ -1,16 +1,18 @@
-#include "main.h"
-/**
- * print_alphabet - Print alphabet in lowercase using only `_putchar`
- * Return: 0
- */
-void print_alphabet(void)
-{
-	char c = 'a';
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
 
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
-}
+int _putchar(char c);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jack_bauer(void);
+void times_table(void);
+int add(int, int);
+void print_to_98(int n);
+void print_times_table(int n);
+
+#endif
