@@ -44,4 +44,6 @@ void print_number(int n)
 			m /= 10;
 		}
 	}
+
+	return (0);
 }
