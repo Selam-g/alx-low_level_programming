@@ -1,1 +1,1 @@
-My readme file for 0x05-pointers_arrays_stringsn
+My readme file for 0x05-pointers_arrays_strings
