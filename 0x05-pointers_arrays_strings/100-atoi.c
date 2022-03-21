@@ -1,21 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 
-int main(void)
+/**
+* _atoi - convert a string to an integer
+* @s: String
+* Return: Return the num
+*/
+int _atoi(char *s)
 {
-	int myrand;
-	int count;
-	int total;
+unsigned int number, i;
+int sign;
 
-	srand(time(NULL));
-	for (count = 0, total = 2772; total > 122; count++)
-	{
-		myrand = (rand() % 125) + 1;
-		printf("%c", myrand);
-		total -= myrand;
-	}
-	printf("%c", total);
+sign = 1;
+number = 0;
 
-	return (0);
+for (i = 0; s[i] != '\0'; i++
+{
+if (is_numerical(s[i]))
+{
+number = (s[i] - 48 + number * 10;
+if (s[i + 1] == ' ')
+break;
+}
+else if (s[i] == '-')
+{
+sign *= -1;
+}
+
+}
+
+return (unmber * sign);
+
 }
