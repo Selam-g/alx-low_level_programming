@@ -46,22 +46,3 @@ int wildcmp(char *s1, char *s2)
 	return (0);
 
 }
-
-#include "main.h"
-
-/**
- * wildcmp - compare two strings with "wildcard expansion" capabilities
- * @s1: string 1
- * @s2: string 2
- * Return: 1 if strings can be considered identical, else 0
- */
-
-int findsrc(char *s, char c, int i, int p)
-{
-	if (*(s + i) == '\0')
-		return (p + 1);
-	else if (*(s + i) == c || *(s + i) == '*')
-		p = i;
-
-	return (findsrc(s, c, i + 1, p));
-}
