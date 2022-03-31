@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h:"
 
 /**
  * wildcmp - compare two strings with "wildcard expansion" capabilities
