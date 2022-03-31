@@ -46,3 +46,13 @@ int wildcmp(char *s1, char *s2)
 	return (0);
 
 }
+
+int findsrc(char *s, char c, int i, int p)
+{
+	if (*(s + i) == '\0')
+		return (p + 1);
+	else if (*(s + i) == c || *(s + i) == '*')
+		p = i;
+
+	return (findsrc(s, c, i + 1, p));
+}
