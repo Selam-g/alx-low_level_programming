@@ -1,1 +1,4 @@
-https://files.slack.com/files-pri/T0195LMKD1R-F03AQRBQWM6/download/libmy.a?origin_team=T0195LMKD1R
+#!/bin/bash
+gcc -Wall -pedantic -Werror -Wextra -c *.c
+ar -rc liball.a *.o
+ranlib liball.a
